@@ -57,7 +57,7 @@ namespace Calculator
             txtbx4.Text = Convert.ToString(d + o + i);
             txtbx3.Text = Convert.ToString(a + d + o + i);
             txtbx5.Text = Convert.ToString(((b * w) + (y * q) + (t * s))/25);
-            txtbx1.MaxLength = 3;
+            
         }
         
 
