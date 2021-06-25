@@ -179,31 +179,25 @@ namespace Calculator
 
         private void txtbx6_KeyPress(object sender, KeyPressEventArgs e)
         {
-            char number = e.KeyChar;
-
-            if (!Char.IsDigit(number))
+            if (!(Char.IsDigit(e.KeyChar)) && !((e.KeyChar == ',') && (txtbx6.Text.IndexOf(",") == -1) && (txtbx6.Text.Length != 0)))
             {
-                e.Handled = true;
+                if (e.KeyChar != (char)Keys.Back) e.Handled = true;
             }
         }
 
         private void txtbx7_KeyPress(object sender, KeyPressEventArgs e)
         {
-            char number = e.KeyChar;
-
-            if (!Char.IsDigit(number))
+            if (!(Char.IsDigit(e.KeyChar)) && !((e.KeyChar == ',') && (txtbx7.Text.IndexOf(",") == -1) && (txtbx8.Text.Length != 0)))
             {
-                e.Handled = true;
+                if (e.KeyChar != (char)Keys.Back) e.Handled = true;
             }
         }
 
         private void txtbx8_KeyPress(object sender, KeyPressEventArgs e)
         {
-            char number = e.KeyChar;
-
-            if (!Char.IsDigit(number))
+            if (!(Char.IsDigit(e.KeyChar)) && !((e.KeyChar == ',') && (txtbx8.Text.IndexOf(",") == -1) && (txtbx8.Text.Length != 0)))
             {
-                e.Handled = true;
+                if (e.KeyChar != (char)Keys.Back) e.Handled = true;
             }
         }
     }
